@@ -1,0 +1,87 @@
+﻿@model List<Amortization_System.Models.BuyerViewModel>
+@{
+    ViewData["Title"] = "Buyer Details";
+    var successMessage = TempData["successMessage"]?.ToString();
+    var errorMessage = TempData["errorMessage"]?.ToString();
+
+
+}
+<div class="bg-secondary bg-opacity-10 py-2">
+    <div class="container">
+        <h3>@ViewData["Title"]</h3>
+    </div>
+</div>
+@if (!string.IsNullOrWhiteSpace(successMessage))
+{
+    <div class="alert alert-success">
+        <strong>@successMessage</strong>
+        <button type="button" class="btn-close float-end" data-bs-dismiss="alert"></button>
+    </div>
+}
+else if (!string.IsNullOrWhiteSpace(errorMessage))
+{
+    <div class="alert alert-danger">
+        <strong>@errorMessage</strong>
+        <button type="button" class="btn-close float-end" data-bs-dismiss="alert"></button>
+    </div>
+}
+<div class="container py-3">
+    <form>
+        <button asp-action="Create" asp-controller="Buyers" class="btn btn-primary mb-3">Add Buyer</button>
+        <table class="table table-responsive table-hover table-bordered">
+            <thead>
+                <tr class="table-active ">
+                    <th class="text-center">ID</th>
+                    <th class="text-center">Buyer Name</th>
+                    <th class="text-center">Address</th>
+                    <th class="text-center">Project Name</th>
+                    <th class="text-center">Loan Amount</th>
+                    <th class="text-center">Payment Start</th>
+                    <th class="text-center">Condo Unit</th>
+                    <th class="text-center">Payment Term</th>
+                    <th class="text-center">Interest Rate</th>
+                    <th class="text-center">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Any())
+                {
+                    @foreach (var buyer in Model)
+                    {
+                        <tr>
+                            <td class="text-center">@buyer.id</td>
+                            <td>@buyer.buyer_name</td>
+                            <td class="text-center">@buyer.address</td>
+                            <td class="text-center">@buyer.project_name</td>
+                            <td class="text-end">@buyer.loan_amount</td>
+                            <td class="text-center">@buyer.payment_start.ToString("MMM dd, yyyy")</td>
+                            <td class="text-center">@buyer.condo_unit</td>
+                            <td class="text-center">@buyer.payment_term </td>
+                            <td class="text-center">@buyer.interest_rate</td>
+                            <td class="text-center">
+                                <div class="btn-group btn-group-sm">
+                                    <a asp-controller="Buyers" asp-action="Edit" asp-route-id="@buyer.id" class="btn btn-primary">Edit</a>
+                                </div>
+                                <div class="btn-group btn-group-sm">
+                                    <a asp-controller="Buyers" asp-action="Delete" asp-route-id="@buyer.id" class="btn btn-danger">Delete</a>
+                                </div>
+
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+
+                    <tr>
+                        <td colspan="10">
+                            <div class="text-center">No Data Available.</div>
+                        </td>
+                    </tr>
+
+                }
+
+            </tbody>
+        </table>
+    </form>
+</div>
