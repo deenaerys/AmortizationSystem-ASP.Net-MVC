@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\AmortizationSystem-ASP.Net-MVC\\Amortization_System\\Amortization_System.csproj": {}
+    "C:\\EXAM\\AmortizationSystem-ASP.Net-MVC\\Amortization_System\\Amortization_System.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\AmortizationSystem-ASP.Net-MVC\\Amortization_System\\Amortization_System.csproj": {
+    "C:\\EXAM\\AmortizationSystem-ASP.Net-MVC\\Amortization_System\\Amortization_System.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\AmortizationSystem-ASP.Net-MVC\\Amortization_System\\Amortization_System.csproj",
+        "projectUniqueName": "C:\\EXAM\\AmortizationSystem-ASP.Net-MVC\\Amortization_System\\Amortization_System.csproj",
         "projectName": "Amortization_System",
-        "projectPath": "C:\\Dev\\AmortizationSystem-ASP.Net-MVC\\Amortization_System\\Amortization_System.csproj",
+        "projectPath": "C:\\EXAM\\AmortizationSystem-ASP.Net-MVC\\Amortization_System\\Amortization_System.csproj",
         "packagesPath": "C:\\Users\\Dee\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\AmortizationSystem-ASP.Net-MVC\\Amortization_System\\obj\\",
+        "outputPath": "C:\\EXAM\\AmortizationSystem-ASP.Net-MVC\\Amortization_System\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dee\\AppData\\Roaming\\NuGet\\NuGet.Config",

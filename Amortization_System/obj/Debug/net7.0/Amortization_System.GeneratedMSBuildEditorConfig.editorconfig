@@ -9,65 +9,65 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Amortization_System
 build_property.RootNamespace = Amortization_System
-build_property.ProjectDir = C:\Dev\AmortizationSystem-ASP.Net-MVC\Amortization_System\
+build_property.ProjectDir = C:\EXAM\AmortizationSystem-ASP.Net-MVC\Amortization_System\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Dev\AmortizationSystem-ASP.Net-MVC\Amortization_System
+build_property.MSBuildProjectDirectory = C:\EXAM\AmortizationSystem-ASP.Net-MVC\Amortization_System
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Dev/AmortizationSystem-ASP.Net-MVC/Amortization_System/Views/Buyers/Add.cshtml]
+[C:/EXAM/AmortizationSystem-ASP.Net-MVC/Amortization_System/Views/Buyers/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV5ZXJzXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/AmortizationSystem-ASP.Net-MVC/Amortization_System/Views/Buyers/Amort.cshtml]
+[C:/EXAM/AmortizationSystem-ASP.Net-MVC/Amortization_System/Views/Buyers/Amort.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV5ZXJzXEFtb3J0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/AmortizationSystem-ASP.Net-MVC/Amortization_System/Views/Buyers/Buyer.cshtml]
+[C:/EXAM/AmortizationSystem-ASP.Net-MVC/Amortization_System/Views/Buyers/Buyer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV5ZXJzXEJ1eWVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/AmortizationSystem-ASP.Net-MVC/Amortization_System/Views/Buyers/Create.cshtml]
+[C:/EXAM/AmortizationSystem-ASP.Net-MVC/Amortization_System/Views/Buyers/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV5ZXJzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/AmortizationSystem-ASP.Net-MVC/Amortization_System/Views/Buyers/Delete.cshtml]
+[C:/EXAM/AmortizationSystem-ASP.Net-MVC/Amortization_System/Views/Buyers/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV5ZXJzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/AmortizationSystem-ASP.Net-MVC/Amortization_System/Views/Buyers/Edit.cshtml]
+[C:/EXAM/AmortizationSystem-ASP.Net-MVC/Amortization_System/Views/Buyers/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV5ZXJzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/AmortizationSystem-ASP.Net-MVC/Amortization_System/Views/Buyers/Index.cshtml]
+[C:/EXAM/AmortizationSystem-ASP.Net-MVC/Amortization_System/Views/Buyers/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV5ZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/AmortizationSystem-ASP.Net-MVC/Amortization_System/Views/Home/Index.cshtml]
+[C:/EXAM/AmortizationSystem-ASP.Net-MVC/Amortization_System/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/AmortizationSystem-ASP.Net-MVC/Amortization_System/Views/Home/Privacy.cshtml]
+[C:/EXAM/AmortizationSystem-ASP.Net-MVC/Amortization_System/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/AmortizationSystem-ASP.Net-MVC/Amortization_System/Views/Shared/Error.cshtml]
+[C:/EXAM/AmortizationSystem-ASP.Net-MVC/Amortization_System/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/AmortizationSystem-ASP.Net-MVC/Amortization_System/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/EXAM/AmortizationSystem-ASP.Net-MVC/Amortization_System/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/AmortizationSystem-ASP.Net-MVC/Amortization_System/Views/_ViewImports.cshtml]
+[C:/EXAM/AmortizationSystem-ASP.Net-MVC/Amortization_System/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/AmortizationSystem-ASP.Net-MVC/Amortization_System/Views/_ViewStart.cshtml]
+[C:/EXAM/AmortizationSystem-ASP.Net-MVC/Amortization_System/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/AmortizationSystem-ASP.Net-MVC/Amortization_System/Views/Shared/_Layout.cshtml]
+[C:/EXAM/AmortizationSystem-ASP.Net-MVC/Amortization_System/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-3iz364mzmd
