@@ -238,5 +238,45 @@ namespace Amortization_System.Controllers
             }
 
         }
+
+        [HttpGet]
+        public IActionResult Buyer(int id)
+        {
+            try
+            {
+                var buyer = amorDbContext.Buyers.SingleOrDefault(x => x.id == id);
+                if (buyer != null)
+                {
+                    var buyerView = new BuyerViewModel()
+                    {
+                        id = buyer.id,
+                        buyer_name = buyer.buyer_name,
+                        address = buyer.address,
+                        project_name = buyer.project_name,
+                        loan_amount = buyer.loan_amount,
+                        payment_start = buyer.payment_start,
+                        condo_unit = buyer.condo_unit,
+                        payment_term = buyer.payment_term,
+                        interest_rate = buyer.interest_rate
+
+                    };
+                    return View(buyerView);
+
+                }
+                else
+                {
+                    TempData["errorMessage"] = $"Buyer details not available with ID:{id}";
+                    return RedirectToAction("Index");
+                }
+            }
+            catch (Exception ex)
+            {
+
+                TempData["errorMessage"] = ex.Message;
+                return RedirectToAction("Index");
+            }
+
+
+        }
     }
 }

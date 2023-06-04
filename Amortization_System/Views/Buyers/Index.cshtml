@@ -35,11 +35,11 @@ else if (!string.IsNullOrWhiteSpace(errorMessage))
                     <th class="text-center">Buyer Name</th>
                     <th class="text-center">Address</th>
                     <th class="text-center">Project Name</th>
-                    <th class="text-center">Loan Amount</th>
+                    @*<th class="text-center">Loan Amount</th>
                     <th class="text-center">Payment Start</th>
                     <th class="text-center">Condo Unit</th>
                     <th class="text-center">Payment Term</th>
-                    <th class="text-center">Interest Rate</th>
+                    <th class="text-center">Interest Rate</th>*@
                     <th class="text-center">Action</th>
                 </tr>
             </thead>
@@ -53,12 +53,15 @@ else if (!string.IsNullOrWhiteSpace(errorMessage))
                             <td>@buyer.buyer_name</td>
                             <td class="text-center">@buyer.address</td>
                             <td class="text-center">@buyer.project_name</td>
-                            <td class="text-end">@buyer.loan_amount</td>
-                            <td class="text-center">@buyer.payment_start.ToString("MMM dd, yyyy")</td>
-                            <td class="text-center">@buyer.condo_unit</td>
-                            <td class="text-center">@buyer.payment_term </td>
-                            <td class="text-center">@buyer.interest_rate</td>
+                            @* <td class="text-end">@buyer.loan_amount</td>
+                    <td class="text-center">@buyer.payment_start.ToString("MMM dd, yyyy")</td>
+                    <td class="text-center">@buyer.condo_unit</td>
+                    <td class="text-center">@buyer.payment_term </td>
+                    <td class="text-center">@buyer.interest_rate</td>*@
                             <td class="text-center">
+                                <div class="btn-group btn-group-sm">
+                                    <a asp-controller="Buyers" asp-action="Buyer" asp-route-id="@buyer.id" class="btn btn-success">View</a>
+                                </div>
                                 <div class="btn-group btn-group-sm">
                                     <a asp-controller="Buyers" asp-action="Edit" asp-route-id="@buyer.id" class="btn btn-primary">Edit</a>
                                 </div>
