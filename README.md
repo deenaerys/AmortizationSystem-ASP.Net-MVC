@@ -7,3 +7,4 @@
 
 ##### Run necessary migration and update database.
 
+### To see demo, please watch the videos attached in here.
