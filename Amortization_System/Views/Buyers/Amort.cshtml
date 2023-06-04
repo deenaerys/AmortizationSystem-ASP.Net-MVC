@@ -1,0 +1,55 @@
+﻿@model List<Amortization_System.Models.AmortViewModel>
+@{
+    ViewData["Title"] = "Amortization Schedule";
+    
+}
+
+
+<div class="bg-secondary bg-opacity-10 py-2">
+    <div class="container">
+        <h3>@ViewData["Title"]</h3>
+    </div>
+</div>
+<div class="container-md">
+    <table class="table table-responsive table-hover table-bordered">
+        <thead>
+            <tr class="table-active ">
+                <th class="text-center">Payment Number</th>
+                <th class="text-center">Payment Date</th>
+                <th class="text-center">Payment Amount</th>
+                <th class="text-center">Principal Payment</th>
+                <th class="text-center">Interest Payment</th>
+                <th class="text-center">Remaining Balance</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="text-center">@item.PaymentNumber</td>
+                    <td class="text-center">@item.PaymentDate.ToString("MM-dd-yyyy")</td>
+                    @{
+                        string formattedPaymentAmount = @item.PaymentAmount.ToString("N2");
+                    }
+                    <td class="text-center">@formattedPaymentAmount</td>
+
+                    @{
+                        string formattedPrincipalPayment = @item.PrincipalPayment.ToString("N2");
+                    }
+                    <td class="text-center">@formattedPrincipalPayment</td>
+
+                    @{
+                        string formattedInterestPayment = @item.InterestPayment.ToString("N2");
+                    }
+                    <td class="text-center">@formattedInterestPayment</td>
+
+                    @{
+                        string formattedRemainingBalance = @item.RemainingBalance.ToString("N2");
+                    }
+                    <td class="text-center">@formattedRemainingBalance</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

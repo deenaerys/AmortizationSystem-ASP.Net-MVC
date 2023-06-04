@@ -72,7 +72,9 @@
             <input type="number" step="0.01" class="form-control" id="interest_rate" asp-for="interest_rate" readonly />
            
         </div>
-        <a asp-controller="Buyers" asp-action="Index" class="btn btn-dark">Build Amortization Schedule</a>
+        <a asp-controller="Buyers" asp-action="Amort" class="btn btn-dark" asp-route-id="@Model.id">Build Amortization Schedule</a>
     </div>   
 </div>
+
+
 

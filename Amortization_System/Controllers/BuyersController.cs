@@ -278,5 +278,42 @@ namespace Amortization_System.Controllers
 
 
         }
+
+
+
+        [HttpGet]
+        public IActionResult Amort(int id) 
+        {
+            var buyer = amorDbContext.Buyers.SingleOrDefault(x => x.id == id);
+            List<AmortViewModel > amortizationSchedule = new List<AmortViewModel >();
+
+            double remainingBalance = buyer.loan_amount ;
+            double monthlyInterestRate = buyer.interest_rate/100;// 12;
+            int numberOfPayments = buyer.payment_term ;
+            DateTime starting= buyer.payment_start ;
+           double monthlyPaymentAmount = buyer.loan_amount * (monthlyInterestRate / (1 - Math.Pow(1 + monthlyInterestRate, -buyer.payment_term)));
+            for (int paymentNumber = 1; paymentNumber <= numberOfPayments; paymentNumber++)
+            {
+                DateTime paymentDate = starting.AddMonths(paymentNumber - 1);
+                double interestPayment = remainingBalance * monthlyInterestRate;
+                double principalPayment = monthlyPaymentAmount - interestPayment;
+                double paymentAmount = principalPayment + interestPayment;
+
+                remainingBalance -= principalPayment;
+
+                AmortViewModel scheduleItem = new AmortViewModel
+                {
+                    PaymentNumber = paymentNumber,
+                    PaymentDate = paymentDate,
+                    PaymentAmount = paymentAmount,
+                    PrincipalPayment = principalPayment,
+                    InterestPayment = interestPayment,
+                    RemainingBalance = remainingBalance
+                };
+
+                amortizationSchedule.Add(scheduleItem);
+            }
+            return View(amortizationSchedule);
+        }
     }
 }
